@@ -1,0 +1,29 @@
+{
+    "format_version": 2,
+    "header": {
+        "name": "Death Chest RP",
+        "description": "Automatically creates a secure chest at player death, safely storing items with location display and elapsed time tracking. Resource Pack for Death Chest Add-on\n(by ToanCao)",
+        "uuid": "5ed818ad-77d4-45ec-84d9-1b7529b0ab9f",
+        "version": [
+            1,
+            1,
+            0
+        ],
+        "min_engine_version": [
+            1,
+            21,
+            0
+        ]
+    },
+    "modules": [
+        {
+            "type": "resources",
+            "uuid": "18b09e83-ad4f-4e89-8450-628733209c7a",
+            "version": [
+                1,
+                1,
+                0
+            ]
+        }
+    ]
+}

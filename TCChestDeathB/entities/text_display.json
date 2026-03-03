@@ -1,0 +1,86 @@
+{
+    "format_version": "1.20.60",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "tc:text_display",
+            "is_spawnable": false,
+            "is_summonable": true,
+            "is_experimental": false,
+            "properties": {
+                "tc:style_id": {
+                    "type": "int",
+                    "default": 0,
+                    "range": [
+                        0,
+                        15
+                    ],
+                    "client_sync": true
+                },
+                "tc:opacity": {
+                    "type": "int",
+                    "default": 100,
+                    "range": [
+                        0,
+                        100
+                    ],
+                    "client_sync": true
+                }
+            }
+        },
+        "component_groups": {
+            "tc:despawn": {
+                "minecraft:instant_despawn": {}
+            }
+        },
+        "components": {
+            "minecraft:type_family": {
+                "family": [
+                    "tc:text_display",
+                    "inanimate"
+                ]
+            },
+            "minecraft:health": {
+                "value": 1,
+                "max": 1
+            },
+            "minecraft:nameable": {
+                "always_show": true,
+                "allow_name_tag_renaming": false
+            },
+            "minecraft:physics": {
+                "has_collision": false,
+                "has_gravity": false
+            },
+            "minecraft:collision_box": {
+                "width": 0.1,
+                "height": 0.1
+            },
+            "minecraft:pushable": {
+                "is_pushable": false,
+                "is_pushable_by_piston": false
+            },
+            "minecraft:movement": {
+                "value": 0.0
+            },
+            "minecraft:damage_sensor": {
+                "triggers": {
+                    "cause": "all",
+                    "deals_damage": false
+                }
+            },
+            "minecraft:fire_immune": true,
+            "minecraft:water_movement": {
+                "drag_factor": 0
+            }
+        },
+        "events": {
+            "tc:despawn": {
+                "add": {
+                    "component_groups": [
+                        "tc:despawn"
+                    ]
+                }
+            }
+        }
+    }
+}

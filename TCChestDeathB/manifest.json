@@ -1,0 +1,64 @@
+{
+    "format_version": 2,
+    "header": {
+        "name": "Death Chest BH",
+        "description": "Automatically creates a secure chest at player death, safely storing items with location display and elapsed time tracking. (by ToanCao) \n CurseForge: https://www.curseforge.com/members/toancao/projects",
+        "uuid": "f116c06f-ec03-4c6a-898a-8f9ac6ac41c7",
+        "version": [
+            1,
+            1,
+            0
+        ],
+        "min_engine_version": [
+            1,
+            21,
+            0
+        ]
+    },
+    "metadata": {
+        "product_type": "addon",
+        "authors": [
+            "ToanCao"
+        ]
+    },
+    "modules": [
+        {
+            "type": "data",
+            "uuid": "4a33e45d-3a5c-4211-a6cc-dacca1fcc982",
+            "version": [
+                1,
+                1,
+                0
+            ]
+        },
+        {
+            "type": "script",
+            "language": "javascript",
+            "uuid": "09df26c3-a288-476b-96d3-a3298ac070b1",
+            "version": [
+                1,
+                1,
+                0
+            ],
+            "entry": "scripts/main.js"
+        }
+    ],
+    "dependencies": [
+        {
+            "module_name": "@minecraft/server",
+            "version": "2.0.0"
+        },
+        {
+            "module_name": "@minecraft/server-ui",
+            "version": "2.0.0"
+        },
+        {
+            "uuid": "5ed818ad-77d4-45ec-84d9-1b7529b0ab9f",
+            "version": [
+                1,
+                1,
+                0
+            ]
+        }
+    ]
+}
